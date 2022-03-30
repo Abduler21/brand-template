@@ -1,11 +1,35 @@
 import logo from "./logo.svg";
+import React, { useState } from 'react';
 import "./App.css";
+import Header from './components/Header';
+import Contact from './components/Contact';
+import Collections from './components/Collections';
 
 function App() {
+  const [currentTab, setCurrentTab] = useState("collections");
+
+	// This function checks to see which tab is selected and then generates the appropriate tab.
+	const renderTab = () => {
+		switch (currentTab) {
+			case "collections":
+				return <Collections />;
+			case "contact":
+				return <Contact />;
+			default:
+				return null;
+		}
+	};
+
+
   return (
-    <div className="App">
-      <h1> GG DENIM </h1> {/* insert title name here */}
-    </div>
+    <div>
+    <div className="mobile-header">
+    <Header currentTab={currentTab} setCurrentTab={setCurrentTab}></Header>
+  </div>
+    <div>
+				<main>{renderTab()}</main>
+			</div>
+  </div>
   );
 }
 
