@@ -6,12 +6,23 @@ function Nav(props) {
 
 	return (
 		<nav >
-			<ul>
-				<li className={currentTab === "collections" ? "mx-2 navActive" : "mx-2"}>
+			    {/* <ul className="nav-links">
+                <li className="nav-items"><a href="#">Home</a></li>
+                <li className="nav-items"><a href="#">Explore</a></li>
+                <li className="nav-items"><a href="#">Collections</a></li>
+                <li className="nav-items">
+                    <a href="#">Search</a>
+                </li>
+            </ul> */}
+			<ul className="nav-links">
+				<li className={currentTab === "collections" ? "nav-items" : "nav-items"}>
 					<span onClick={() => setCurrentTab("collections")}>Collections</span>
 				</li>
-				<li className={currentTab === "contact" ? "mx-2 navActive" : "mx-2"}>
+				<li className={currentTab === "contact" ? "nav-items" : "nav-items"}>
 					<span onClick={() => setCurrentTab("contact")}>Contact</span>
+				</li>
+				<li className={currentTab === "products" ? "nav-items" : "nav-items"}>
+					<span onClick={() => setCurrentTab("products")}>Products</span>
 				</li>
 			</ul>
 		</nav>

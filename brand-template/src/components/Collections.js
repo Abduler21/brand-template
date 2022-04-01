@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import "../index.css";
 
-function Collections() {
+function Collections(props) {
+	const { currentTab, setCurrentTab } = props;
+
 
   return (
     <body>
@@ -10,11 +12,11 @@ function Collections() {
         <h1 className="page-title">
             Collections
         </h1>
-        <div className="card">
-            <a href="#">
-                <img src={require(`../assets/Images/Burn.jpg`)}/>
-                <div className="card__head">Burn</div>
-            </a>
+        <div className={currentTab === "products" ? "card" : "card"} onClick={() => setCurrentTab("collections")} >
+            
+                <img src={require(`../assets/Images/Burn.jpg`)} />
+                <span className="card__head">Products</span>
+            
         </div>
         <div className="card">
             <a href="#">

@@ -4,6 +4,8 @@ import "./App.css";
 import Header from './components/Header';
 import Contact from './components/Contact';
 import Collections from './components/Collections';
+import Products from './components/Products';
+
 
 function App() {
   const [currentTab, setCurrentTab] = useState("collections");
@@ -15,6 +17,8 @@ function App() {
 				return <Collections />;
 			case "contact":
 				return <Contact />;
+			case "products":
+				return <Products />;
 			default:
 				return null;
 		}
@@ -27,7 +31,7 @@ function App() {
     <Header currentTab={currentTab} setCurrentTab={setCurrentTab}></Header>
   </div>
     <div>
-				<main>{renderTab()}</main>
+				<main currentTab={currentTab} setCurrentTab={setCurrentTab}>{renderTab()}</main>
 			</div>
   </div>
   );

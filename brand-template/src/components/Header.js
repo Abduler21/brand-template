@@ -1,15 +1,16 @@
 import React from "react";
 import Navigation from "./Nav";
+import "../index.css";
 
 function Header(props) {
 	const { currentTab, setCurrentTab } = props;
 
 	return (
 		<header >
-		<div className="App">
+			<div className="navbar">
+		
       <h1> GG DENIM </h1> {/* insert title name here */}
-    </div>
-			<div>
+    
 				<Navigation 
 					currentTab={currentTab}
 					setCurrentTab={setCurrentTab}
