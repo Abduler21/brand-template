@@ -10,6 +10,12 @@ const typeDefs = gql`
     }
 
     type Item {
+        itemId: ID!
+        collection: [String]
+        description: String
+        image: String
+        link: String
+        title: String!
 
     }
 
@@ -19,7 +25,12 @@ const typeDefs = gql`
       }
 
     input ItemInput {
-
+        collection: [String]
+        description: String!
+        itemId: String!
+        image: String
+        link: String
+        title: String!
       }
     
     type Query {
