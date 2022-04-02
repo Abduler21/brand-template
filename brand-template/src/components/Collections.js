@@ -1,4 +1,7 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+import { Routes, Route, Outlet, Link } from "react-router-dom";
+import CollectionLink from "../assets/Images/Burn.jpg"
 import "../index.css";
 
 function Collections(props) {
@@ -12,12 +15,14 @@ function Collections(props) {
         <h1 className="page-title">
             Collections
         </h1>
-        <div className={currentTab === "products" ? "card" : "card"} onClick={() => setCurrentTab("collections")} >
-            
-                <img src={require(`../assets/Images/Burn.jpg`)} />
-                <span className="card__head">Products</span>
-            
+        <Link to="/Products">
+        <div className="card" >
+        <a href="/Products" >
+                <img src={CollectionLink} />
+                <div className="card__head">Ice Box</div>
+                </a>
         </div>
+        </Link>
         <div className="card">
             <a href="#">
                 <img src={require(`../assets/Images/Icebox.jpg`)}/>

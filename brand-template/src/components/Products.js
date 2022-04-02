@@ -1,6 +1,8 @@
 import React from 'react';
 import "../product-style.css";
-
+import { NavLink } from 'react-router-dom';
+import { Routes, Route, Link } from "react-router-dom";
+import CollectionLink from "../assets/Images/Burn.jpg"
 function Products () {
 
   return (

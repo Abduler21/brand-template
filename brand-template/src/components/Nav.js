@@ -1,4 +1,5 @@
 import React from "react";
+import { Routes, Route, Outlet, Link } from "react-router-dom";
 import { capitalizeFirstLetter } from "../utils/helpers";
 
 function Nav(props) {
@@ -15,15 +16,20 @@ function Nav(props) {
                 </li>
             </ul> */}
 			<ul className="nav-links">
-				<li className={currentTab === "collections" ? "nav-items" : "nav-items"}>
-					<span onClick={() => setCurrentTab("collections")}>Collections</span>
+				<li className= "nav-items">
+					{/* <span onClick={() => setCurrentTab("collections")}>Collections</span> */}
+					<Link to="/Products">Products</Link>
 				</li>
-				<li className={currentTab === "contact" ? "nav-items" : "nav-items"}>
+				<li className= "nav-items">
+					{/* <span onClick={() => setCurrentTab("collections")}>Collections</span> */}
+					<Link to="/Collections">Collections</Link>
+				</li>
+				{/* <li className={currentTab === "contact" ? "nav-items" : "nav-items"}>
 					<span onClick={() => setCurrentTab("contact")}>Contact</span>
 				</li>
 				<li className={currentTab === "products" ? "nav-items" : "nav-items"}>
 					<span onClick={() => setCurrentTab("products")}>Products</span>
-				</li>
+				</li> */}
 			</ul>
 		</nav>
 	);
