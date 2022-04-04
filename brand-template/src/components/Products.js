@@ -11,7 +11,7 @@ function Products () {
     <body>
     <div className="main-showcase">
     <div className="container-product">
-        <div className="card-product">
+        <Link to="/SingleProducts" className="card-product">
             <div className="imgBx">
                 <img src={require(`../assets/Images/products/Product-1.png`)}/>
             </div>
@@ -19,7 +19,7 @@ function Products () {
                 <h2>Product 1</h2>
                 <a href="#">Buy Now</a>
             </div>
-        </div>
+        </Link>
 
         <div className="card-product">
             <div className="imgBx">

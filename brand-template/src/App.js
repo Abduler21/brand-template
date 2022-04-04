@@ -7,6 +7,7 @@ import Header from './components/Header';
 import Contact from './components/Contact';
 import Collections from './components/Collections';
 import Products from './components/Products';
+import SingleProducts from './components/SingleProduct';
 import Footer from './components/Footer';
 
 
@@ -20,6 +21,7 @@ function App() {
 		<Route path="/" element={<Collections />} />
 		<Route path="/Collections" element={<Collections />} />
 			<Route path="/Products" element={<Products />} />
+      <Route path="/SingleProducts" element={<SingleProducts />} />
 			<Route path="/Contact" element={<Contact />} />
 	</Routes>
   </div>
