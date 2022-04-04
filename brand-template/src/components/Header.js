@@ -1,21 +1,26 @@
 import React from "react";
+import { Routes, Route, Outlet, Link } from "react-router-dom";
 import Navigation from "./Nav";
-import "../index.css";
 
-function Header(props) {
-	const { currentTab, setCurrentTab } = props;
+
+function Header() {
+	
 
 	return (
-		<header >
+		<header className="header" >
 			<div className="navbar">
-		
-      <h1> GG DENIM </h1> {/* insert title name here */}
-    
-				<Navigation 
-					currentTab={currentTab}
-					setCurrentTab={setCurrentTab}
-				></Navigation>
+			
+			<div className="float-left-title">
+			<Link to="/">
+      <h1><span>GG</span><span>DENIM</span></h1> {/* insert title name here */}
+			</Link>
 			</div>
+				<Navigation></Navigation>
+				<div className="right-container">
+				<Link to="/Login" className="login-link">Login/Sign Up</Link>
+			</div>
+			</div>
+
 		</header>
 	);
 }

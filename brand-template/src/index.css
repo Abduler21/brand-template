@@ -14,21 +14,35 @@ body {
 }
 
 
-
-/* body {
-  margin: 0;
-  min-height: 100vh;
-  background: #000;
-  font-family: sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
 /* Navbar Section */
 
+.header {
+  height: 80px;
+  top: 0;
+  left: 0;
+  padding: 0 4%;
+  background: #8dd6d3;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  
+}
+
+.navbar {
+  width: 100vw;
+  height: 80px;
+  top: 0;
+  left: 0;
+  padding: 0 4%;
+  background: #8dd6d3;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 h1 {
-  color: #fff;
+  color: rgb(255, 255, 255);
   font-size: 50px;
   font-weight: bold;
   font-family: monospace;
@@ -51,36 +65,6 @@ h1:hover span:nth-child(2) {
 h1:hover span {
   color: #fff;
   text-shadow: 0 0 10px rgb(51, 27, 27), 0 0 20px #fff, 0 0 40px #fff;
-}
-
-.header {
-  height: 80px;
-  top: 0;
-  left: 0;
-  padding: 0 4%;
-  background: #8dd6d3;
-  z-index: 9;
-  display: flex;
-  align-items: center;
-}
-
-.navbar {
-  width: 100vw;
-  height: 80px;
-  top: 0;
-  left: 0;
-  padding: 0 4%;
-  background: #8dd6d3;
-  z-index: 9;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.nav-links {
-  margin-top: 10px;
-  display: flex;
-  list-style: none;
 }
 
 .brand-logo {
@@ -135,6 +119,7 @@ h1:hover span {
   transition: 1s;
 }
 
+
 /* Collection Section */
 
 .page-title {
@@ -155,7 +140,6 @@ h1:hover span {
   margin: 10vmin;
   overflow: hidden;
   transform: skew(5deg);
-  width: 100%;
 }
 
 .container .card {
@@ -209,4 +193,70 @@ h1:hover span {
 
 .container .card:not(:nth-child(5)) {
   margin-right: 1em;
+}
+
+
+/* Footer Section */
+
+.footbar {
+  bottom: 0;
+  left: 0;
+  padding: 0 4%;
+  background: #8dd6d3;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#myBtn {
+  padding: 15px;
+  border-radius: 5px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+  /* Add a dark-grey background on hover */
+}
+
+
+/* Responsive */
+
+@media (max-width: 940px) {
+  .header {
+      width: auto;
+  }
+  .navbar {
+      width: auto;
+  }
+  .container {
+      flex-direction: column;
+      margin-top: 60px;
+  }
+  .left-column,
+  .right-column {
+      width: 100%;
+  }
+  .left-column img {
+      width: 300px;
+      right: 0;
+      top: -65px;
+      left: initial;
+  }
+  .nav-links {
+      display: none;
+  }
+  .right-container {
+      display: none;
+  }
+  .container {
+      transform: skew(0deg);
+  }
+}
+
+@media (max-width: 535px) {
+  .left-column img {
+      width: 220px;
+      top: -85px;
+  }
 }

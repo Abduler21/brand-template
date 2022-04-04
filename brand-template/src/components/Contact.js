@@ -37,7 +37,7 @@ console.log('errorMessage', errorMessage);
 
   return (
     <section>
-      <h2 >Contact us</h2>
+      <h2 className="xcenter">Contact us</h2>
       <form id="contact-form" onSubmit={handleSubmit}>
       <div>
         <label htmlFor="name">Name:</label>
