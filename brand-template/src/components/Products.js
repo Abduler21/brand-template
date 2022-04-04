@@ -3,13 +3,15 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { Routes, Route, Link } from "react-router-dom";
 import CollectionLink from "../assets/Images/Burn.jpg"
+import '../product-style.css';
+
 function Products () {
 
   return (
     <body>
     <div className="main-showcase">
-    <div className="container">
-        <div className="card">
+    <div className="container-product">
+        <div className="card-product">
             <div className="imgBx">
                 <img src={require(`../assets/Images/products/Product-1.png`)}/>
             </div>
@@ -19,7 +21,7 @@ function Products () {
             </div>
         </div>
 
-        <div className="card">
+        <div className="card-product">
             <div className="imgBx">
                 <img src={require(`../assets/Images/products/Product-2.png`)}/>
             </div>
@@ -29,7 +31,7 @@ function Products () {
             </div>
         </div>
         
-        <div className="card">
+        <div className="card-product">
             <div className="imgBx">
                 <img src={require(`../assets/Images/products/Product-3.png`)}/>
             </div>
@@ -39,7 +41,7 @@ function Products () {
             </div>
         </div>
 
-        <div className="card">
+        <div className="card-product">
             <div className="imgBx">
                 <img src={require(`../assets/Images/products/Product-4.png`)}/>
             </div>
@@ -52,8 +54,8 @@ function Products () {
 </div>
 
 <div className="main-showcase">
-    <div className="container">
-        <div className="card">
+    <div className="container-product">
+        <div className="card-product">
             <div className="imgBx">
                 <img src={require(`../assets/Images/products/Product-5.png`)}/>
             </div>
@@ -63,7 +65,7 @@ function Products () {
             </div>
         </div>
 
-        <div className="card">
+        <div className="card-product">
             <div className="imgBx">
                 <img src={require(`../assets/Images/products/Product-6.png`)}/>
             </div>
@@ -73,7 +75,7 @@ function Products () {
             </div>
         </div>
 
-        <div className="card">
+        <div className="card-product">
             <div className="imgBx">
                 <img src={require(`../assets/Images/products/Product-7.png`)}/>
             </div>
@@ -83,7 +85,7 @@ function Products () {
             </div>
         </div>
 
-        <div className="card">
+        <div className="card-product">
             <div className="imgBx">
                 <img src={require(`../assets/Images/products/Product-8.png`)}/>
             </div>

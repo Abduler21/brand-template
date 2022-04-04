@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import React, { useState } from 'react';
 import { Routes, Route, Outlet, Link } from "react-router-dom";
 import { NavLink } from 'react-router-dom';
+import { useEffect } from 'react'
 import Header from './components/Header';
 import Contact from './components/Contact';
 import Collections from './components/Collections';
