@@ -195,6 +195,134 @@ h1:hover span {
   margin-right: 1em;
 }
 
+.contact-section {
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  min-height: 100vh;
+  background: #000;
+}
+.fillup-form {
+  padding: 50px;
+  background-color: #517E7C;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 50%;
+  height: 75vh;
+  text-align: center;
+  border-radius: 5px;
+}
+.xcenter {
+  font-size: 75px;
+}
+.contact-name {
+  padding-top: 5%;
+  font-size: 1.5em;
+}
+.contact-name input {
+  height: 2.2em;
+  width: 60%;
+  font-size: 0.7em;
+  border-radius: 5px;
+}
+.contact-email {
+  padding-top: 5%;
+  font-size: 1.5em;
+}
+.contact-email input {
+  height: 2.2em;
+  width: 60%;
+  font-size: 0.7em;
+  border-radius: 5px;
+}
+.contact-message {
+  padding-top: 5%;
+  font-size: 1.5em;
+}
+.contact-message textarea {
+  height: 300px;
+  width: 60%;
+  font-size: 0.7em;
+  border-radius: 5px;
+}
+button {
+  margin-top: 30px;
+  height: 50px;
+  width: 150px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+button:hover {
+  transform: translateY(1px);
+  cursor: pointer;
+  box-shadow: 0 0 5px rgb(51, 27, 27), 0 0 5px #fff, 0 0 5px #fff;
+}
+@media (max-width: 940px) {
+  .contact-section {
+      padding: 20px;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      min-height: 100vh;
+      background: #000;
+  }
+  .fillup-form {
+      margin-top: 20px;
+      background-color: #8DD6D3;
+      justify-content: center;
+      align-items: center;
+      height: 75vh;
+      text-align: center;
+  }
+  .xcenter {
+      font-size: 40px;
+  }
+  .contact-name {
+      padding-top: 5%;
+      font-size: 1.2em;
+  }
+  .contact-name input {
+      height: 2em;
+      width: 100%;
+      font-size: 0.7em;
+      border-radius: 5px;
+  }
+  .contact-email {
+      padding-top: 5%;
+      font-size: 1.5em;
+  }
+  .contact-email input {
+      height: 2em;
+      width: 100%;
+      font-size: 0.7em;
+      border-radius: 5px;
+  }
+  .contact-message {
+      padding-top: 5%;
+      font-size: 1.5em;
+  }
+  .contact-message textarea {
+      height: 250px;
+      width: 100%;
+      font-size: 0.7em;
+      border-radius: 5px;
+  }
+  button {
+      margin-top: 30px;
+      height: 50px;
+      width: 150px;
+      border-radius: 5px;
+      font-size: 20px;
+  }
+  button:hover {
+      transform: translateY(1px);
+      cursor: pointer;
+      box-shadow: 0 0 5px rgb(51, 27, 27), 0 0 5px #fff, 0 0 5px #fff;
+  }
+}
+
 
 /* Footer Section */
 
@@ -259,4 +387,10 @@ h1:hover span {
       width: 220px;
       top: -85px;
   }
+
+  .left-column-single img {
+    width: 220px;
+    top: -85px;
 }
+}
+

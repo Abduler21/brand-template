@@ -16,8 +16,8 @@ function Products () {
                 <img src={require(`../assets/Images/products/Product-1.png`)}/>
             </div>
             <div className="contentBx">
-                <h2>Product 1</h2>
-                <a href="#">Buy Now</a>
+                <h2>Blue Amber</h2>
+                <a href="https://checkout.stripe.com/pay/cs_test_a16VTYaAl1vSnirPY6tDMzKKjioHVs1cu1nfh0pQLqO6R56WxMYMFbrhsP#fidkdWxOYHwnPyd1blpxYHZxWjA0TmxKTW1MfWE9Zn1vTDNiVFFOcnczUGZTbVNdNjVUSnZkcHNxQ3w0UEdJMXU3azB3aV1hS01CamExRnw8ZkBWb3xoZkxPbzNxTF1zcF08YHRCUDRBdWZBNTV8YlFyaTBLPCcpJ3VpbGtuQH11anZgYUxhJz8ncWB2cVo0MW5gXDIzREYyc3AxQ3xmSFEneCUl">Buy Now</a>
             </div>
         </Link>
 
@@ -26,17 +26,18 @@ function Products () {
                 <img src={require(`../assets/Images/products/Product-2.png`)}/>
             </div>
             <div className="contentBx">
-                <h2>Product 2</h2>
-                <a href="#">Buy Now</a>
+                <h2>Russian Doll</h2>
+                <h3>Sold Out</h3>
+                {/* <a href="#">Buy Now</a> */}
             </div>
         </div>
         
         <div className="card-product">
             <div className="imgBx">
-                <img src={require(`../assets/Images/products/Product-3.png`)}/>
+                <img src={require(`../assets/Images/products/Golden-Sapphire-3.png`)}/>
             </div>
             <div className="contentBx">
-                <h2>Product 3</h2>
+                <h2>Golden Sapphire</h2>
                 <a href="#">Buy Now</a>
             </div>
         </div>
@@ -70,7 +71,7 @@ function Products () {
                 <img src={require(`../assets/Images/products/Product-6.png`)}/>
             </div>
             <div className="contentBx">
-                <h2>Product 6</h2>
+                <h2>Red Amber</h2>
                 <a href="#">Buy Now</a>
             </div>
         </div>
@@ -90,7 +91,7 @@ function Products () {
                 <img src={require(`../assets/Images/products/Product-8.png`)}/>
             </div>
             <div className="contentBx">
-                <h2>Product 8</h2>
+                <h2>Tigers Eye</h2>
                 <a href="#">Buy Now</a>
             </div>
         </div>

@@ -36,32 +36,34 @@ console.log('errorMessage', errorMessage);
   // JSX
 
   return (
-    <section>
-      <h2 className="xcenter">Contact us</h2>
-      <form id="contact-form" onSubmit={handleSubmit}>
-      <div>
-        <label htmlFor="name">Name:</label>
-        <br></br>
-        <input type="text" defaultValue={name} onBlur={handleChange} name="name" />
-      </div>
-      <div>
-        <label htmlFor="email">Email address:</label>
-        <br></br>
-        <input type="email" defaultValue={email} onBlur={handleChange} name="email"/>
-      </div>
-      <div>
-        <label htmlFor="message">Message:</label>
-        <br></br>
-        <textarea name="message" defaultValue={message} onBlur={handleChange} rows="5"  />
-      </div>
-      {errorMessage && (
-  <div>
-    <p >{errorMessage}</p>
-  </div>
+    <section class="contact-section">
+    <div class="fillup-form">
+    <h2 className="xcenter">Contact us</h2>
+    <form id="contact-form" onSubmit={handleSubmit}>
+    <div class="contact-name">
+      <label htmlFor="name">Name:</label>
+      <br></br>
+      <input type="text" defaultValue={name} onBlur={handleChange} name="name" />
+    </div>
+    <div class="contact-email">
+      <label htmlFor="email">Email address:</label>
+      <br></br>
+      <input type="email" defaultValue={email} onBlur={handleChange} name="email"/>
+    </div>
+    <div class="contact-message">
+      <label htmlFor="message">Message:</label>
+      <br></br>
+      <textarea name="message" defaultValue={message} onBlur={handleChange} rows="5"  />
+    </div>
+    {errorMessage && (
+<div>
+  <p >{errorMessage}</p>
+</div>
 )}
-      <button  type="submit">Submit</button>
-      </form>
-    </section>
+    <button  type="submit">Submit</button>
+    </form>
+    </div>
+  </section>
   )
   }
   

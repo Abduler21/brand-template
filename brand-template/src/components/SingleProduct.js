@@ -48,7 +48,7 @@ render() {
         <input type='button' onClick={this.onclick.bind(this, 'add')} value='Inc'/>
         <input type='button' onClick={this.onclick.bind(this, 'sub')} value='Dec'/>
         </div>
-        <a href="#" className="cart-btn">Add to cart</a>
+        <a href="https://checkout.stripe.com/pay/cs_test_a16VTYaAl1vSnirPY6tDMzKKjioHVs1cu1nfh0pQLqO6R56WxMYMFbrhsP#fidkdWxOYHwnPyd1blpxYHZxWjA0TmxKTW1MfWE9Zn1vTDNiVFFOcnczUGZTbVNdNjVUSnZkcHNxQ3w0UEdJMXU3azB3aV1hS01CamExRnw8ZkBWb3xoZkxPbzNxTF1zcF08YHRCUDRBdWZBNTV8YlFyaTBLPCcpJ3VpbGtuQH11anZgYUxhJz8ncWB2cVo0MW5gXDIzREYyc3AxQ3xmSFEneCUl" className="cart-btn">Add to cart</a>
     </div>
 
     <div className="product-description-info">
