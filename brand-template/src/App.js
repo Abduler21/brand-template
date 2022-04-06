@@ -10,6 +10,7 @@ import Products from './components/Products';
 import SingleProducts from './components/SingleProduct';
 import GoldenSapphire from './components/GoldenSapphire';
 import RedAmber from './components/RedAmber';
+import TigersEye from './components/TigersEye';
 import Login from './components/LoginForm';
 import Signup from './components/SignupForm';
 import Footer from './components/Footer';
@@ -28,6 +29,7 @@ function App() {
       <Route path="/SingleProducts" element={<SingleProducts />} />
       <Route path="/GoldenSapphire" element={<GoldenSapphire />} />
       <Route path="/RedAmber" element={<RedAmber />} />
+      <Route path="/TigersEye" element={<TigersEye />} />
 			<Route path="/Contact" element={<Contact />} />
       <Route path="/Signup" element={<Signup />} />
       <Route path="/Login" element={<Login />} />
