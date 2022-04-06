@@ -1,7 +1,7 @@
 const { Schema } = require('mongoose');
 
 const itemSchema = new Schema({
-    collection: [
+    product: [
         {
             type: String,
         },
