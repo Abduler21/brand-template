@@ -5,7 +5,7 @@ import { Routes, Route, Link } from "react-router-dom";
 import CollectionLink from "../assets/Images/Burn.jpg"
 import '../singleProduct.css';
 
-class SingleProduct extends React.Component {
+class RedAmber extends React.Component {
 
   constructor  (props) {
     super(props);
@@ -27,7 +27,7 @@ render() {
 <div className="left-column-single">
     {/* <img data-image="black" src="images/black.png" alt="">
     <img data-image="blue" src="images/blue.png" alt=""> */}
-    <img className="active" src={require(`../assets/Images/products/Product-1.png`)} alt="" />
+    <img className="active" src={require(`../assets/Images/products/Product-6.png`)} alt="" />
 </div>
 
 
@@ -37,18 +37,18 @@ render() {
      {/* Product Description  */}
     <div className="product-description">
         <span>Equinox Collection</span>
-        <h1>Special Edition "Blue Amber" Balaclava</h1>
+        <h1>Special Edition "Red Amber" Balaclava</h1>
     </div>
 {/* 
      Product Pricing  */}
     <div className="product-price">
-        <span>$39.99</span>
+        <span>$44.99</span>
         <br />
         <div className="quantity buttons_added">
         <input type='button' onClick={this.onclick.bind(this, 'add')} value='Inc'/>
         <input type='button' onClick={this.onclick.bind(this, 'sub')} value='Dec'/>
         </div>
-        <a href="https://checkout.stripe.com/pay/cs_test_a16VTYaAl1vSnirPY6tDMzKKjioHVs1cu1nfh0pQLqO6R56WxMYMFbrhsP#fidkdWxOYHwnPyd1blpxYHZxWjA0TmxKTW1MfWE9Zn1vTDNiVFFOcnczUGZTbVNdNjVUSnZkcHNxQ3w0UEdJMXU3azB3aV1hS01CamExRnw8ZkBWb3xoZkxPbzNxTF1zcF08YHRCUDRBdWZBNTV8YlFyaTBLPCcpJ3VpbGtuQH11anZgYUxhJz8ncWB2cVo0MW5gXDIzREYyc3AxQ3xmSFEneCUl" className="cart-btn">Add to cart</a>
+        <a href="https://checkout.stripe.com/pay/cs_test_a174reuazq9mRNka5SNOfOyyODfISfJBbWJ6INSe79U0lXVscnixkl3EVj#fidkdWxOYHwnPyd1blpxYHZxWjA0TmxKTW1MfWE9Zn1vTDNiVFFOcnczUGZTbVNdNjVUSnZkcHNxQ3w0UEdJMXU3azB3aV1hS01CamExRnw8ZkBWb3xoZkxPbzNxTF1zcF08YHRCUDRBdWZBNTV8YlFyaTBLPCcpJ3VpbGtuQH11anZgYUxhJz8ncWB2cVpnTFxhUDZmXzVnSU48X1ZgUzAneCUl" className="cart-btn">Add to cart</a>
     </div>
 
     <div className="product-description-info">
@@ -78,4 +78,4 @@ render() {
   }
 }
 
-export default SingleProduct ;
+export default RedAmber ;

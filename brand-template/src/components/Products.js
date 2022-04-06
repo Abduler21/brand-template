@@ -32,7 +32,7 @@ function Products () {
             </div>
         </div>
         
-        <div className="card-product">
+        <Link to="/GoldenSapphire" className="card-product">
             <div className="imgBx">
                 <img src={require(`../assets/Images/products/Golden-Sapphire-3.png`)}/>
             </div>
@@ -40,7 +40,7 @@ function Products () {
                 <h2>Golden Sapphire</h2>
                 <a href="#">Buy Now</a>
             </div>
-        </div>
+        </Link>
 
         <div className="card-product">
             <div className="imgBx">
@@ -66,7 +66,7 @@ function Products () {
             </div>
         </div>
 
-        <div className="card-product">
+        <Link to="/RedAmber" className="card-product">
             <div className="imgBx">
                 <img src={require(`../assets/Images/products/Product-6.png`)}/>
             </div>
@@ -74,7 +74,7 @@ function Products () {
                 <h2>Red Amber</h2>
                 <a href="#">Buy Now</a>
             </div>
-        </div>
+        </Link>
 
         <div className="card-product">
             <div className="imgBx">
