@@ -17,7 +17,7 @@ function Header() {
 			</div>
 				<Navigation></Navigation>
 				<div className="right-container">
-				<Link to="/Login" className="login-link">Login/Sign Up</Link>
+				<Link to="/Signup" className="login-link">Login/Sign Up</Link>
 			</div>
 			</div>
 

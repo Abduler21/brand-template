@@ -23,7 +23,7 @@ function Products () {
 
         <div className="card-product">
             <div className="imgBx">
-                <img src={require(`../assets/Images/products/Product-2.png`)}/>
+                <img src={require(`../assets/Images/products/Russian-Doll.png`)}/>
             </div>
             <div className="contentBx">
                 <h2>Russian Doll</h2>
