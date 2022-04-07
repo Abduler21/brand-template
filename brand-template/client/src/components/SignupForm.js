@@ -61,76 +61,77 @@ const SignupForm = () => {
   };
 
   return (
-    <>
+    <div class="signup-section">
+    <div class="signup-form">
       <Form noValidate validated={validated} onSubmit={handleFormSubmit}>
-        <Alert
-          dismissible
-          onClose={() => setShowAlert(false)}
-          show={showAlert}
-          variant="danger"
-        >
-          Something went wrong with your signup!
-        </Alert>
-
-        <Form.Group>
-          <Form.Label htmlFor="username">Username</Form.Label>
-          <Form.Control
-            type="text"
-            placeholder="Your username"
-            name="username"
-            onChange={handleInputChange}
-            value={userFormData.username}
-            required
-          />
-          <Form.Control.Feedback type="invalid">
-            Username is required!
-          </Form.Control.Feedback>
-        </Form.Group>
-
-        <Form.Group>
-          <Form.Label htmlFor="email">Email</Form.Label>
-          <Form.Control
-            type="email"
-            placeholder="Your email address"
-            name="email"
-            onChange={handleInputChange}
-            value={userFormData.email}
-            required
-          />
-          <Form.Control.Feedback type="invalid">
-            Email is required!
-          </Form.Control.Feedback>
-        </Form.Group>
-
-        <Form.Group>
-          <Form.Label htmlFor="password">Password</Form.Label>
-          <Form.Control
-            type="password"
-            placeholder="Your password"
-            name="password"
-            onChange={handleInputChange}
-            value={userFormData.password}
-            required
-          />
-          <Form.Control.Feedback type="invalid">
-            Password is required!
-          </Form.Control.Feedback>
-        </Form.Group>
-        <Button
-          disabled={
-            !(
-              userFormData.username &&
-              userFormData.email &&
-              userFormData.password
-            )
-          }
-          type="submit"
-          variant="success"
-        >
-          Submit
-        </Button>
+      <Alert
+        dismissible
+        onClose={() => setShowAlert(false)}
+        show={showAlert}
+        variant="danger"
+      >
+        Something went wrong with your signup!
+      </Alert>
+      <Form.Group class="signup-username">
+        <Form.Label htmlFor="username">Username</Form.Label>
+        <Form.Control
+        class="form-input"
+          type="text"
+          placeholder="Your username"
+          name="username"
+          onChange={handleInputChange}
+          value={userFormData.username}
+          required
+        />
+        <Form.Control.Feedback type="invalid">
+          Username is required!
+        </Form.Control.Feedback>
+      </Form.Group>
+      <Form.Group class="signup-email">
+        <Form.Label htmlFor="email">Email</Form.Label>
+        <Form.Control
+        class="form-input"
+          type="email"
+          placeholder="Your email address"
+          name="email"
+          onChange={handleInputChange}
+          value={userFormData.email}
+          required
+        />
+        <Form.Control.Feedback type="invalid">
+          Email is required!
+        </Form.Control.Feedback>
+      </Form.Group>
+      <Form.Group class="signup-password">
+        <Form.Label htmlFor="password">Password</Form.Label>
+        <Form.Control
+          type="password"
+          placeholder="Your password"
+          name="password"
+          onChange={handleInputChange}
+          value={userFormData.password}
+          required
+        />
+        <Form.Control.Feedback type="invalid">
+          Password is required!
+        </Form.Control.Feedback>
+      </Form.Group>
+      <Button id="signup-button"
+        disabled={
+          !(
+            userFormData.username &&
+            userFormData.email &&
+            userFormData.password
+          )
+        }
+        type="submit"
+        variant="success"
+      >
+        Submit
+      </Button>
       </Form>
-    </>
+    </div>
+  </div>
   );
 };
 

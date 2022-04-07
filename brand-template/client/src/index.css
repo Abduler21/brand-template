@@ -163,6 +163,41 @@ h1:hover span {
   background-color: rgb(26, 74, 112);
 }
 
+
+/* signup section*/
+
+.signup-section {
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  min-height: 100vh;
+  background: #000;
+}
+.signup-form {
+  padding: 50px;
+  background-color: #517E7C;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 50%;
+  height: 50vh;
+  text-align: center;
+  border-radius: 5px;
+}
+.signup-username {
+  padding: 50px;
+}
+.signup-email {
+  padding: 50px;
+}
+.signup-password {
+  padding: 50px;
+}
+#signup-button {
+  background-color: aliceblue;
+}
+
 /* Collection Section */
 
 .page-title {
