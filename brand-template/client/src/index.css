@@ -119,6 +119,84 @@ h1:hover span {
   transition: 1s;
 }
 
+/*login section*/
+
+.login-section {
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  min-height: 100vh;
+  background: #000;
+}
+.login-form {
+  padding: 50px;
+  background-color: #517E7C;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 50%;
+  height: 50vh;
+  text-align: center;
+  border-radius: 5px;
+}
+.form-email {
+  font-size: 30px;
+}
+.form-password {
+  font-size: 30px;
+}
+.form-input {
+  height: 30px;
+  margin-left: 20px;
+}
+.login-username {
+  padding: 50px;
+}
+.login-email {
+  padding: 50px;
+}
+.login-password {
+  padding: 50px;
+}
+#login-button {
+  background-color: rgb(26, 74, 112);
+}
+
+
+/* signup section*/
+
+.signup-section {
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  min-height: 100vh;
+  background: #000;
+}
+.signup-form {
+  padding: 50px;
+  background-color: #517E7C;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 50%;
+  height: 50vh;
+  text-align: center;
+  border-radius: 5px;
+}
+.signup-username {
+  padding: 50px;
+}
+.signup-email {
+  padding: 50px;
+}
+.signup-password {
+  padding: 50px;
+}
+#signup-button {
+  background-color: aliceblue;
+}
 
 /* Collection Section */
 

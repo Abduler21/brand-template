@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { Routes, Route, Outlet, Link } from "react-router-dom";
-import CollectionLink from "../assets/Images/Burn.jpg"
+
 
 
 function Collections(props) {
@@ -15,36 +15,36 @@ function Collections(props) {
         </h2>
     <div className="container">
         
-        <Link to="/Products" className='card'>
+        <Link to="/Equinox" className='card'>
         <a href="#" >
-                <img src={CollectionLink} />
-                <div className="card__head">Ice Box</div>
+                <img src={require(`../assets/Images/Equinox-Collection.jpg`)} />
+                <div className="card__head">Equinox</div>
                 </a>
         </Link>
-        <div className="card">
+        <Link to="/KryptoCollection" className="card">
             <a href="#">
-                <img src={require(`../assets/Images/Icebox.jpg`)}/>
-                <div className="card__head">Ice Box</div>
+                <img src={require(`../assets/Images/Kryptex-Collection.jpg`)}/>
+                <div className="card__head">Krypto</div>
             </a>
-        </div>
-        <div className="card">
+        </Link>
+        <Link to="/TigerEyeCollection" className="card">
             <a href="#">
-                <img src={require(`../assets/Images/Rollie.jpg`)}/>
-                <div className="card__head">Rollie</div>
+                <img src={require(`../assets/Images/Tigers-Eye-Collection.jpg`)}/>
+                <div className="card__head">Tigers Eye</div>
             </a>
-        </div>
-        <div className="card">
+        </Link>
+        <Link to="/UzumakiCollection" className="card">
             <a href="#">
-                <img src={require(`../assets/Images/Smoke.jpg`)}/>
-                <div className="card__head">Smoke</div>
+                <img src={require(`../assets/Images/Uzumaki-Collection.jpg`)}/>
+                <div className="card__head">Uzumaki</div>
             </a>
-        </div>
-        <div className="card">
+        </Link>
+        {/* <div className="card">
             <a href="#">
                 <img src={require(`../assets/Images/Shadow.jpg`)}/>
                 <div className="card__head">Shadow</div>
             </a>
-        </div>
+        </div> */}
     </div>
 
 </body>
