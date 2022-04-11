@@ -44,3 +44,7 @@ View the Website/App here: <br>
 <br>
 https://brand-to-death.herokuapp.com/
 
+## license
+
+  This project was built using MIT. For more information about the MIT license visit the link provided <br>    
+  [MIT license](https://opensource.org/licenses/MIT)
