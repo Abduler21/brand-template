@@ -14,33 +14,33 @@ This is what the Checkout Page looks like: https://drive.google.com/file/d/1pcOp
 
 ## how to install and run the project
 
-git clone 
-npm install
-npm start
+git clone <br>
+npm install <br>
+npm start <br>
 
 ## how to use the project
 
-git clone the ssh link from this repo in your terminal: https://github.com/Abduler21/brand-template
-run npm i
-then to start run npm start
+git clone the ssh link from this repo in your terminal: https://github.com/Abduler21/brand-template <br>
+run npm i <br>
+then to start run npm start <br>
 
-once directed to the homepage click the collection you want to see or the product page
-click your favorite product 
-click Add to Cart
-put in your information at Checkout 
-& wear your product with pleasure when it arrives
+once directed to the homepage click the collection you want to see or the product page <br>
+click your favorite product <br>
+click Add to Cart <br>
+put in your information at Checkout <br> 
+& wear your product with pleasure when it arrives <br>
 
-## credits 
+## credits <br>
 
-Abdulmelik Ersoy https://github.com/Abduler21
-Adam Howard https://github.com/Ahoward21
-David Binyatov https://github.com/fuggcodes
-Jacob Yarce https://github.com/Keemperor
-James Debajo https://github.com/MrPinkPanther10
+Abdulmelik Ersoy https://github.com/Abduler21 <br>
+Adam Howard https://github.com/Ahoward21 <br>
+David Binyatov https://github.com/fuggcodes <br>
+Jacob Yarce https://github.com/Keemperor <br>
+James Debajo https://github.com/MrPinkPanther10 <br>
 
 ## deployed link
 
-View the Website/App here:
-
+View the Website/App here: <br>
+<br>
 https://brand-to-death.herokuapp.com/
 
